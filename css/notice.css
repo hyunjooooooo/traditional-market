@@ -1,0 +1,98 @@
+@charset 'utf-8';
+@import url("common.css");
+main {
+}
+main p {
+  margin: 20px;
+}
+.txt {
+  font-size: 30px;
+  font-family: "Song Myung", serif;
+  text-align: center;
+}
+.input {
+  text-align: center;
+}
+
+.input .input_1 {
+  width: 8%;
+  height: 25px;
+}
+
+.input .input_2 {
+  width: 15%;
+  height: 25px;
+}
+.input img {
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+.story_ {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin: 100px 160px;
+}
+.story_ div {
+  width: 30%;
+}
+.story_ p {
+  font-size: 13px;
+  width: 70%;
+  height: 10%;
+  margin: 0px 15px;
+}
+.story_ img {
+  width: 70%;
+  height: 70%;
+  text-align: center;
+}
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+table td {
+  border-bottom: 1px solid black;
+}
+thead tr th {
+  padding: 10px;
+}
+.notice_table {
+  width: 100%;
+  margin-top: 3%;
+}
+.txt__ {
+  text-align: center;
+}
+.txt_ div {
+  padding: 10px 15px 10px 10px;
+}
+.txt_ a {
+  text-decoration: none;
+  color: black;
+  text-align: none;
+}
+
+.paging {
+  font-family: "Song Myung", serif;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.paging a {
+  text-decoration: none;
+  color: black;
+}
+.paging li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.paging a:hover {
+  color: black;
+  padding: 5px 8px 5px 8px;
+  background: #ebac23;
+  border-radius: 50px;
+}

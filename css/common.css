@@ -1,0 +1,147 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&family=Song+Myung&family=Noto+Serif+KR:wght@200&display=swap");
+html,
+body,
+p,
+figure {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+header {
+  width: 90%;
+  margin: 50px auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Gugi", cursive;
+  /* font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Song Myung', serif; */
+  padding: 0 0 0 100px;
+  font-size: 3.2rem;
+}
+.logo a {
+  color: #0e0e0e;
+  text-decoration: none;
+}
+.menu a {
+  color: #0e0e0e;
+  text-decoration: none;
+}
+.menu {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  display: flex;
+  padding-right: 30px;
+}
+.menu p {
+  padding-left: 50px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  padding: 2% 10%;
+  margin-top: 100px;
+  background-color: #e7e7e7;
+  align-items: center;
+}
+
+footer p {
+  font-family: "Nanum Gothic", sans-serif;
+  color: #0e0e0e;
+  font-size: 1vh;
+}
+
+footer img {
+  width: 80%;
+  margin: 0;
+}
+
+.menu a:hover {
+  color: black;
+  padding: 5px 8px 5px 8px;
+  border-radius: 50px;
+  background: #ebac23;
+}
+
+@media (max-width: 925px) and (min-width: 769px) {
+  .logo {
+    padding-left: 40px;
+  }
+  .menu P {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    padding-left: 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+  nav {
+  }
+  nav > a {
+    width: 26px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    z-index: 99999;
+  }
+  nav > a span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(8, 8, 8);
+  }
+  nav > a span:nth-child(1) {
+    top: 0;
+  }
+  nav > a span:nth-child(2) {
+    top: calc(20% - 1px);
+  }
+  nav > a span:nth-child(3) {
+    top: calc(40% - 2px);
+  }
+  nav > div {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /*가로에서 세로 변경*/
+    display: none;
+  }
+  nav div p {
+    padding: 20px 0; /*flex 영향으로 인해 패딩 마진 다 먹음*/
+  }
+  nav div p a {
+    font-size: 2rem;
+    font-family: "Song Myung", serif;
+  }
+  nav > a:hover + div {
+    display: flex;
+  }
+}
+footer p {
+  line-height: 1.2;
+}

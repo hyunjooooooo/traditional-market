@@ -1,0 +1,92 @@
+@charset 'utf-8';
+@import url("common.css");
+
+main p {
+  margin: 20px;
+}
+.txt {
+  font-size: 30px;
+  font-family: "Song Myung", serif;
+  text-align: center;
+}
+.input {
+  text-align: center;
+}
+
+.input .input_1 {
+  width: 8%;
+  height: 25px;
+}
+
+.input .input_2 {
+  width: 15%;
+  height: 25px;
+}
+.input img {
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+.story_ {
+  display: flex;
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.story_ div {
+  width: 100%;
+  padding-left: 50px;
+}
+.story_ p {
+  font-size: 13px;
+  width: 90%;
+  height: 10%;
+  margin-left: 15px;
+}
+.story_ img {
+  width: 90%;
+  height: 70%;
+  text-align: center;
+}
+.story_ img:hover {
+  transform: scale(1.1);
+}
+
+.paging {
+  font-family: "Song Myung", serif;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  /* margin-bottom: -90%; */
+}
+.paging a {
+  text-decoration: none;
+  color: black;
+}
+.paging li {
+  display: inline;
+  margin-right: 30px;
+}
+.paging .startpage {
+}
+
+.paging li:hover {
+  color: black;
+  padding: 5px 8px 5px 8px;
+  background: #ebac23;
+  border-radius: 50px;
+}
+.top {
+  height: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.top img {
+  width: 40px;
+  height: 40px;
+  margin-top: 180px;
+}

@@ -1,0 +1,158 @@
+@charset 'utf-8';
+@import url("common.css");
+main {
+  width: 100%;
+}
+main::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+main .main {
+  width: 90%;
+  /* float: right; */
+}
+.main > div:nth-child(1) {
+  width: 65%;
+}
+.main img {
+  width: 100%;
+  height: 70vh;
+}
+.main_text {
+  width: 35%;
+  color: white;
+  background-color: #cb8e25;
+  font-family: "Song Myung", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main_text p {
+  padding: 3% 15%;
+  word-break: keep-all;
+}
+.main_text a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.main_text .ex1 {
+  font-size: 4rem;
+}
+.main_text .ex2 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.main_text .ex3 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.main_text .ex4 {
+  font-size: 15px;
+}
+
+.main_banner {
+  position: absolute;
+  left: 12%;
+  top: 25%;
+  height: 30%;
+  width: 25%;
+}
+.main_banner img {
+  width: 100%;
+}
+
+.main_banner img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 925px) and (min-width: 768px) {
+  .main_text p {
+    padding: 3% 10%;
+    word-break: keep-all;
+  }
+  .main_text .ex1 {
+    font-size: 3.5rem;
+  }
+  .main_text .ex2 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+  .main_text .ex3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .main_text .ex4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main .main {
+    display: flex;
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .main > div:nth-child(1) {
+    width: 100%;
+  }
+  .main_banner {
+    position: absolute;
+    left: 20%;
+    top: 23%;
+    height: 60%;
+    width: 60%;
+  }
+  main {
+    height: 80vh;
+  }
+  main .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main img {
+    width: 100%;
+    height: 65vh;
+  }
+  .main_text p {
+    padding: 1% 18%;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .main_text {
+    position: absolute;
+    width: 90%;
+    bottom: 0%;
+    color: white;
+    background-color: #cb8e25;
+    /* background-color: rgba(184, 130, 32, 0.5); */
+    font-family: "Song Myung", serif;
+  }
+
+  .main_text .ex1 {
+    padding-top: 20px;
+    font-size: 2.5rem;
+  }
+  .main_text .ex2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .main_text .ex3 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .main_text .ex4 {
+    font-size: 0.5rem;
+    padding-bottom: 20px;
+  }
+  .main_banner img:hover {
+    transform: scale(1.1);
+  }
+  main br {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+@charset 'utf-8';
+@import url("common.css");
+
+main {
+  width: 100%;
+}
+.txt {
+  font-size: 30px;
+  font-family: "Song Myung", serif;
+  text-align: center;
+}
+
+article {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.text_ex {
+  margin-left: 2%;
+  width: 8%;
+  position: absolute;
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_ex p {
+  padding: 80% 5%;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.text_ex .t1 {
+  line-height: 1.8;
+}
+.text_ex .t2 {
+  line-height: 1.5;
+}
+.text_ex .t3 {
+  line-height: 1.5;
+}
+
+.img_intro {
+  width: 20%;
+  margin: 1% 0;
+}
+.img_intro img {
+  margin: 22px 0;
+}
+
+.img_intro .img1 {
+  width: 100%;
+}
+.img_intro .img2 {
+  width: 100%;
+}
+.img_intro .img3 {
+  width: 100%;
+}
+
+.text {
+  font-size: 1.2em;
+  width: 80%;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.text_1 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  margin: 9% 5%;
+  line-height: 1.8;
+}
+.text_2 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  margin: 9% 5%;
+  line-height: 1.8;
+}
+.text_3 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  margin: 9% 5%;
+  line-height: 1.8;
+}

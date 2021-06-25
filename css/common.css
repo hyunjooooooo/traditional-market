@@ -83,6 +83,7 @@ footer img {
 
 @media (max-width: 768px) {
   header {
+    margin: 20px auto;
   }
   .logo {
     width: 100%;
@@ -144,4 +145,13 @@ footer img {
 }
 footer p {
   line-height: 1.2;
+}
+@media (max-width: 321px) {
+  .logo {
+    font-size: 2rem;
+  }
+  nav > a {
+    width: 20px;
+    height: 25px;
+  }
 }

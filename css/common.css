@@ -144,7 +144,7 @@ footer img {
   }
 }
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 footer p {
   line-height: 1.2;
@@ -158,6 +158,6 @@ footer p {
     height: 25px;
   }
   footer {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }

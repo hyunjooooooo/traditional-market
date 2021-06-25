@@ -143,6 +143,9 @@ footer img {
     display: flex;
   }
 }
+footer {
+  margin-top: 50px;
+}
 footer p {
   line-height: 1.2;
 }
@@ -153,5 +156,8 @@ footer p {
   nav > a {
     width: 20px;
     height: 25px;
+  }
+  footer {
+    margin-top: 50px;
   }
 }

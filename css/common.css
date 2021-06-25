@@ -142,13 +142,14 @@ footer img {
   nav > a:hover + div {
     display: flex;
   }
+  footer {
+    margin-top: 20px;
+  }
+  footer p {
+    line-height: 1.2;
+  }
 }
-footer {
-  margin-top: 20px;
-}
-footer p {
-  line-height: 1.2;
-}
+
 @media (max-width: 321px) {
   .logo {
     font-size: 2rem;

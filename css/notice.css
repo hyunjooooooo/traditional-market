@@ -30,17 +30,28 @@ main p {
 }
 
 table {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 table td {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+thead {
 }
 thead tr th {
-  padding: 5px;
+  background-color: rgb(240, 240, 240);
+  padding: 15px;
+}
+thead tr th:nth-child(1) {
+  width: 11%;
 }
 thead tr th:nth-child(2) {
-  width: 55%;
+}
+thead tr th:nth-child(3) {
+  width: 13%;
+}
+thead tr th:nth-child(4) {
+  width: 16%;
 }
 .notice_table {
   width: 100%;
@@ -50,7 +61,7 @@ thead tr th:nth-child(2) {
   text-align: center;
 }
 .txt_ div {
-  padding: 10px 15px 10px 10px;
+  padding: 10px 0px 10px 10px;
 }
 .txt_ a {
   text-decoration: none;
@@ -81,7 +92,7 @@ thead tr th:nth-child(2) {
   border-radius: 50px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 768px) {
   .input .input_1 {
     width: 18%;
     height: 20px;
@@ -97,22 +108,6 @@ thead tr th:nth-child(2) {
     vertical-align: bottom;
   }
 
-  table {
-    width: 85%;
-  }
-  .notice_table {
-    font-size: 0.7rem;
-  }
-  .paging {
-    margin-top: 20px;
-  }
-  .paging li {
-    margin-right: 15px;
-    font-size: 0.8rem;
-  }
-  .txt_ div {
-    padding: 5px 10px 5px 5px;
-  }
   input {
     font-size: 0.5rem;
   }
@@ -121,4 +116,25 @@ thead tr th:nth-child(2) {
   }
   .txt {
     font-size: 1.5rem;
+  }
+  .txt_ div {
+    padding: 5px 0px 5px 5px;
+  }
+  table {
+    width: 90%;
+    margin-top: 20px;
+  }
+  thead tr th {
+    padding: 10px;
+  }
+  .notice_table {
+    font-size: 0.8rem;
+  }
+  .paging {
+    margin-top: 20px;
+  }
+  .paging li {
+    margin-right: 15px;
+    font-size: 0.8rem;
+  }
 }

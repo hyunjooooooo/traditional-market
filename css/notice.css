@@ -15,8 +15,9 @@ main p {
 }
 
 .input .input_1 {
-  width: 13%;
+  width: 10%;
   height: 30px;
+  margin: 0 2px;
 }
 
 .input .input_2 {

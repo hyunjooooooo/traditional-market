@@ -11,8 +11,9 @@
 }
 
 .input .input_1 {
-  width: 13%;
+  width: 10%;
   height: 30px;
+  margin: 0 2px;
 }
 
 .input .input_2 {
@@ -70,7 +71,8 @@
   font-family: "Song Myung", serif;
   width: 100%;
   text-align: center;
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 .paging a {
   text-decoration: none;

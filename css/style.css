@@ -21,7 +21,7 @@ main .main {
 }
 .main_text {
   width: 35%;
-  color: black;
+  color: white;
   background-color: #ec9e18;
   font-family: "Song Myung", serif;
   display: flex;
@@ -33,9 +33,9 @@ main .main {
   word-break: keep-all;
 }
 .main_text a {
-  color: black;
+  color: white;
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 .main_text .ex1 {
   font-size: 4rem;

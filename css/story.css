@@ -1,9 +1,6 @@
 @charset 'utf-8';
 @import url("common.css");
 
-main p {
-  margin: 20px;
-}
 .txt {
   font-size: 30px;
   font-family: "Song Myung", serif;
@@ -14,53 +11,66 @@ main p {
 }
 
 .input .input_1 {
-  width: 8%;
-  height: 25px;
+  width: 13%;
+  height: 30px;
 }
 
 .input .input_2 {
-  width: 15%;
-  height: 25px;
+  width: 25%;
+  height: 30px;
 }
 .input img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   vertical-align: bottom;
+}
+.ex {
+  margin: 30px;
 }
 
 .story_ {
   display: flex;
-  position: relative;
   width: 85%;
   margin: 0 auto;
   margin-top: 50px;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 1.5;
 }
 
 .story_ div {
   width: 100%;
-  padding-left: 50px;
+  text-align: center;
+  border: 1px solid rgba(236, 236, 236, 0.4);
+  margin: 0 20px;
 }
 .story_ p {
   font-size: 13px;
-  width: 90%;
-  height: 14%;
-  margin: 0;
+  width: 300px;
+  margin: 0 auto;
+  text-align: start;
+  font-size: 0.9rem;
+  padding-top: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .story_ img {
-  width: 90%;
-  height: 70%;
-  text-align: center;
+  width: 80%;
+  padding-top: 30px;
 }
 .story_ img:hover {
   transform: scale(1.1);
+}
+.story_ p:hover {
+  overflow: visible;
+  white-space: pre-line;
 }
 
 .paging {
   font-family: "Song Myung", serif;
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
-  /* margin-bottom: -90%; */
+  margin: 50px 0;
 }
 .paging a {
   text-decoration: none;
@@ -70,45 +80,56 @@ main p {
   display: inline;
   margin-right: 30px;
 }
-.paging .startpage {
-}
 
-.paging li:hover {
-  color: black;
-  padding: 5px 8px 5px 8px;
+.paging li a:hover {
+  color: white;
+  padding: 5px 10px;
   background: #ebac23;
-  border-radius: 50px;
+  border-radius: 100px;
 }
-.top {
-  height: 0;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.top img {
-  width: 40px;
-  height: 40px;
-  margin-top: 180px;
-}
-
 @media (max-width: 768px) {
   .story_ {
     display: unset;
   }
   .story_ div {
-    margin: 0 auto;
+    border: 1px solid rgba(236, 236, 236, 0.4);
     width: 80%;
-    border: 1px solid violet;
+    padding: 0;
+    text-align: center;
+    margin: 20px auto;
   }
   .story_ p {
-    padding: 30px 0;
-    width: 65%;
+    margin: 0 auto;
+    width: 70%;
+    text-align: start;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
+
   .story_ img {
-    width: 60%;
-    text-align: center;
+    width: 70%;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .paging {
     margin-top: 50px;
+  }
+  .input .input_1 {
+    width: 15%;
+    height: 25px;
+  }
+
+  .input .input_2 {
+    width: 30%;
+    height: 25px;
+  }
+  .input img {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+  }
+
+  input {
+    font-size: 0.5rem;
   }
 }

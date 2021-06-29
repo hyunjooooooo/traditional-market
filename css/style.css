@@ -106,7 +106,7 @@ main .main {
     width: 60%;
   }
   main {
-    height: 75vh;
+    height: 80vh;
   }
   main .main {
     width: 90%;
@@ -152,13 +152,13 @@ main .main {
   }
   @media (max-width: 321px) {
     main {
-      height: 75vh;
+      height: 80vh;
     }
     .main img {
       height: 45vh;
     }
     .main_banner {
-      top: 15%;
+      top: 20%;
     }
     .main_text {
       width: 100%;

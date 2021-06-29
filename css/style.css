@@ -22,20 +22,20 @@ main .main {
 .main_text {
   width: 35%;
   color: black;
-  background-color: #cb8e25;
+  background-color: #ec9e18;
   font-family: "Song Myung", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .main_text p {
-  padding: 1% 15%;
+  padding: 1% 20%;
   word-break: keep-all;
 }
 .main_text a {
-  color: white;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 .main_text .ex1 {
   font-size: 4rem;
@@ -45,8 +45,8 @@ main .main {
   line-height: 1.4;
 }
 .main_text .ex3 {
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  line-height: 1.3;
 }
 .main_text .ex4 {
   font-size: 15px;

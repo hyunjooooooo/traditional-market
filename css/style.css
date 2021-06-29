@@ -21,7 +21,7 @@ main .main {
 }
 .main_text {
   width: 35%;
-  color: white;
+  color: black;
   background-color: #cb8e25;
   font-family: "Song Myung", serif;
   display: flex;

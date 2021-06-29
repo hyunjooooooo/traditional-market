@@ -140,7 +140,7 @@ footer img {
     font-size: 2rem;
     font-family: "Song Myung", serif;
   }
-  nav > a:link + div {
+  nav > a:hover + div {
     display: flex;
   }
 

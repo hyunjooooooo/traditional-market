@@ -57,7 +57,8 @@ footer {
 footer p {
   font-family: "Nanum Gothic", sans-serif;
   color: #0e0e0e;
-  font-size: 1vh;
+  font-size: 0.7rem;
+  line-height: 2;
 }
 
 footer img {

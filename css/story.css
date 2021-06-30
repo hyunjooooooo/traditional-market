@@ -31,33 +31,30 @@
 
 .story_ {
   display: flex;
-  width: 85%;
-  margin: 0 auto;
   margin-top: 50px;
   font-family: "Nanum Gothic", sans-serif;
   line-height: 1.5;
 }
 
 .story_ div {
-  width: 100%;
+  width: 30%;
   text-align: center;
   border: 1px solid rgba(236, 236, 236, 0.4);
-  margin: 0 20px;
+  margin: 0 auto;
 }
 .story_ p {
   font-size: 13px;
-  width: 300px;
-  margin: 0 auto;
-  text-align: start;
+  width: 80%;
+  margin: 20px auto;
   font-size: 0.9rem;
-  padding-top: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .story_ img {
   width: 80%;
-  padding-top: 30px;
+  height: 80%;
+  padding-top: 10px;
 }
 .story_ img:hover {
   transform: scale(1.1);
@@ -101,7 +98,7 @@
     margin: 20px auto;
   }
   .story_ p {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 70%;
     text-align: start;
     text-overflow: ellipsis;
@@ -109,9 +106,9 @@
   }
 
   .story_ img {
-    width: 70%;
+    width: 60%;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .paging {
     margin-top: 50px;

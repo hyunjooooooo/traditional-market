@@ -143,9 +143,6 @@ footer img {
   nav > a:hover + div {
     display: flex;
   }
-  nav > a:hover + img {
-    display: none;
-  }
 
   footer p {
     line-height: 1.2;

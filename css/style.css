@@ -181,5 +181,8 @@ main .main {
       font-size: 0.5rem;
       padding-bottom: 20px;
     }
+    .main_banner img:hover {
+      transform: none;
+    }
   }
 }

@@ -73,7 +73,7 @@ footer img {
   background: #ebac23;
 }
 
-@media (max-width: 925px) and (min-width: 769px) {
+@media (max-width: 925px) and (min-width: 768px) {
   .logo {
     padding-left: 40px;
   }

@@ -152,9 +152,9 @@ footer img {
   nav > a.active {
     transform: translateY(0%);
   }
-  /* nav > a:hover + div {
+  nav > a:hover + div {
     display: flex;
-  } */
+  }
 
   footer p {
     line-height: 1.2;

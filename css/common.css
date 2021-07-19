@@ -139,25 +139,27 @@ footer img {
   .menu p {
     padding-left: 0px;
   }
-  .menu p a {
-    color: #0e0e0e;
-    text-decoration: none;
-  }
+
   nav div p {
     padding: 20px 0; /*flex 영향으로 인해 패딩 마진 다 먹음*/
   }
   nav div p a {
+    color: #0e0e0e;
+    text-decoration: none;
     font-size: 2rem;
     font-family: "Song Myung", serif;
   }
   nav > a.active {
     transform: translateY(0%);
   }
-  nav > a:hover + div {
+  /* nav > a:hover + div {
     display: flex;
-  }
+  } */
 
   footer p {
     line-height: 1.2;
+  }
+  .slick-track {
+    display: none;
   }
 }

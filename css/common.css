@@ -101,6 +101,7 @@ footer img {
     position: relative;
     display: inline-block;
     z-index: 99999;
+    transform: translateY(100%);
   }
   nav > a span {
     position: absolute;
@@ -129,6 +130,7 @@ footer img {
     justify-content: center;
     flex-direction: column; /*가로에서 세로 변경*/
   }
+
   .menu {
     display: none;
     z-index: 10;
@@ -137,6 +139,10 @@ footer img {
   .menu p {
     padding-left: 0px;
   }
+  .menu p a {
+    color: #0e0e0e;
+    text-decoration: none;
+  }
   nav div p {
     padding: 20px 0; /*flex 영향으로 인해 패딩 마진 다 먹음*/
   }
@@ -144,7 +150,9 @@ footer img {
     font-size: 2rem;
     font-family: "Song Myung", serif;
   }
-
+  nav > a.active {
+    transform: translateY(0%);
+  }
   nav > a:hover + div {
     display: flex;
   }

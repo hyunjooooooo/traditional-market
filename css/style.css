@@ -64,10 +64,13 @@ main .main {
   width: 100%;
 }
 
-.main_banner img:hover {
-  transform: scale(1.1);
+@media (max-width: 1480px) and (min-width: 926px) {
+  .main_banner {
+    height: 40%;
+    width: 30%;
+    left: 15%;
+  }
 }
-
 @media (max-width: 925px) and (min-width: 768px) {
   .main_text p {
     padding: 3% 10%;
@@ -86,6 +89,11 @@ main .main {
   }
   .main_text .ex4 {
     font-size: 1rem;
+  }
+  .main_banner {
+    height: 40%;
+    width: 35%;
+    left: 15%;
   }
 }
 

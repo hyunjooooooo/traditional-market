@@ -94,7 +94,8 @@
   margin: 20px 0;
 }
 .list img {
-  padding: 0 30px;
+  padding: 50px;
+  width: 25%;
 }
 .popup {
   position: fixed;

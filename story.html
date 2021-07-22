@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전통시장</title>
+    <script src="story.js"></script>
     <link href="css/story.css" rel="stylesheet">
 </head>
 <body>
@@ -37,21 +38,28 @@
            <input type="search" class="input_2" placeholder="  검색어를 입력하세요.">
            <a href="#"><img src="img/one.png" alt="돋보기"></a> 
        </div>
+       <div class="list"></div>
+       <div class="list__"></div>
+       
 
-       <div class="story_">
+       <!-- <div class="story_">
            <div>
             <p>[먹거리] 서울_서울 전통시장에서 포장으로 안전하게 집에서 야식 먹자! 망원동월드컵시장 경창시장 자양전통시장 현대시장 신원시장</p>
-            <a href="http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218820_2067.jsp?menu_id=220400"><img src="img/1.jpg" alt="먹거리"></a>
+            <a href="http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218820_2067.jsp?menu_id=220400">
+            <img src="img/1.jpg" alt="먹거리"></a> 
            </div>
-           <div>
+           <div> 
             <p>[먹거리] 강원_마음이 따듯해지는 시장, 춘천후평시장의 포장 먹거리 후평시장</p>
-            <a href="http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218633_2067.jsp?menu_id=220400"><img src="img/2.jpg" alt="먹거리"></a>
-        </div>
-        <div>
+            <a href="http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218633_2067.jsp?menu_id=220400">
+            <img src="img/2.jpg" alt="먹거리"></a> 
+            </div>
+            <div>
             <p>[먹거리] 서울_코로나19로 집에 콕 해야 하는 우울한 기분, 안전하게 테이크아웃으로 당충전 하고 싶다면~ 망원시장 경동시장 아현시장 둔촌시장 답십리현대 시장</p>
-            <a href="http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218572_2067.jsp?menu_id=220400"><img src="img/3.jpg" alt="먹거리"></a>
-           </div>
-       </div>
+            <a href="http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218572_2067.jsp?menu_id=220400">
+            <img src="img/3.jpg" alt="먹거리"></a> 
+           </div> 
+       </div> -->
+
        <div class="paging">
         <ui>
             <li><a href="#"><</a></li>
@@ -83,5 +91,35 @@
             </p>
     </footer>
     
+
+    <style>
+        .list{ text-align:center; 
+        list-style:none;
+        padding:30px;  
+        margin:20px 0;
+        }
+        .list img{
+            padding: 0 30px;
+        }
+        .list__{
+            position:fixed;
+            left:0; top:0;
+            width:100%; height:100%;
+            background:rgba(0,0,0,0.8);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            color:#fff;
+            display: none;
+            font-family: "Nanum Gothic", sans-serif;
+        }
+        .list__ div {
+            text-align: center;
+            font-size: 20px;
+            line-height: 2;
+            
+        }
+    </style>
 </body>
 </html>

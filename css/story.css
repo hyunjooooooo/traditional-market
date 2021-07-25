@@ -90,12 +90,13 @@
 .list {
   text-align: center;
   list-style: none;
-  padding: 30px;
-  margin: 20px 0;
+  margin: 60px 0;
 }
 .list img {
-  padding: 50px;
   width: 25%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .popup {
   position: fixed;

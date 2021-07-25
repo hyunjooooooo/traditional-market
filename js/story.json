@@ -20,6 +20,27 @@
             "link":"http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218572_2067.jsp?menu_id=220400",
             "detail":"서울_코로나19로 집에 콕 해야 하는 우울한 기분,<br>  안전하게 테이크아웃으로 당충전 하고 싶다면~ <br> 망원시장 경동시장 아현시장 둔촌시장 답십리현대 시장)<br> ",
             "photo":"img/3.jpg"
+        },
+        {
+            "name":"먹거리1", 
+            "date":"2021.08",
+            "link":"story1.html",
+            "detail":"(서울_서울 전통시장에서 포장으로 안전하게 집에서 야식 먹자! <br> 망원동월드컵시장 경창시장 자양전통시장 현대시장 신원시장)<br> ",
+            "photo":"img/1.jpg"
+        },
+        {
+            "name":"먹거리2", 
+            "date":"2021.07",
+            "link":"http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218633_2067.jsp?menu_id=220400",
+            "detail":"(강원_마음이 따듯해지는 시장, 춘천후평시장의 포장 먹거리 후평시장)<br> ",
+            "photo":"img/2.jpg"
+        },
+        {
+            "name":"먹거리3", 
+            "date":"2021.05",
+            "link":"http://www.sbiz.or.kr/sijangtong/cms/ssjtt_ne/story_15/1218572_2067.jsp?menu_id=220400",
+            "detail":"서울_코로나19로 집에 콕 해야 하는 우울한 기분,<br>  안전하게 테이크아웃으로 당충전 하고 싶다면~ <br> 망원시장 경동시장 아현시장 둔촌시장 답십리현대 시장)<br> ",
+            "photo":"img/3.jpg"
         }
     ]
 }

@@ -11,7 +11,7 @@ function init(){
 
         res = JSON.parse(xhr.responseText);
         res.work.forEach(function(v,k){
-            tagList += `<img src = ${v.photo}>`;
+            tagList += ` <img src = ${v.photo}>`;
         
         });        
         elList.innerHTML = tagList;

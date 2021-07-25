@@ -63,6 +63,9 @@ main .main {
 .main_banner img {
   width: 100%;
 }
+audio {
+  display: none;
+}
 
 @media (max-width: 1480px) and (min-width: 926px) {
   .main_banner {

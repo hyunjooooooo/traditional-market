@@ -190,11 +190,19 @@
                 if(city_2 == "11"){
                 city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
-                });
-            }else if(city_2 == "12"){
-                city_market_1_2.forEach(item => {
-                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
-                });
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.4894514,126.8831079),
+                    zoom: 15
+                };
+            });
+        }else if(city_2 == "12"){
+            city_market_1_2.forEach(item => {
+                h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                var mapOptions = {
+                    center: new naver.maps.LatLng(37.4916251,126.8515728),
+                    zoom: 15
+                };
+            });
             }else if(city_2 == "13"){
                 city_market_1_3.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');

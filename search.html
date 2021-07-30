@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="img/1-0.png">
     <meta name="twitter:description" content="산지의 신선함을 그대로 전달하기 위해 노력하는 소상공인,
     깨끗하고 신선함으로 안전하게 지켜온 우리 가족의 건강,전통시장과 함께 합니다.">
-    <audio src = "bgm.mp3" controls autoplay loop></audio>
+    <!-- <audio src = "bgm.mp3" controls autoplay loop></audio> -->
 </head>
 <body>
     <nav class="navbar">
@@ -75,16 +75,19 @@
     ];
 
         let city_child_1 = [
+        {v:"",t:""},
         {v:"11",t:"구로구"},
         {v:"12",t:"강남구"},
         {v:"13",t:"마포구"}
         ]
         let city_child_2 = [
+        {v:"",t:""},
         {v:"21",t:"김포시"},
         {v:"22",t:"부천시"},
         {v:"23",t:"포천시"}
         ]
         let city_child_3 = [
+        {v:"",t:""},
         {v:"31",t:"남동구"},
         {v:"32",t:"연수구"},
         {v:"33",t:"동구"}
@@ -231,8 +234,8 @@
 
 
         var mapOptions = {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
+            center: new naver.maps.LatLng(37.4894514,126.8831079),
+            zoom: 12
         };
 
         var map = new naver.maps.Map('map', mapOptions);

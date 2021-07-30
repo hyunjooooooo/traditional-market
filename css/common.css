@@ -73,12 +73,43 @@ footer img {
   background: #ebac23;
 }
 
+.navbar_tool {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: black;
+  display: none;
+}
+
 @media (max-width: 925px) and (min-width: 768px) {
   .logo {
     padding-left: 40px;
   }
   .menu P {
     padding-left: 25px;
+  }
+  .main_text p {
+    padding: 3% 10%;
+    word-break: keep-all;
+  }
+  .main_text .ex1 {
+    font-size: 3.5rem;
+  }
+  .main_text .ex2 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+  .main_text .ex3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .main_text .ex4 {
+    font-size: 1rem;
+  }
+  .main_banner {
+    height: 40%;
+    width: 35%;
+    left: 15%;
   }
 }
 

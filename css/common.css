@@ -1,4 +1,3 @@
-@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&family=Song+Myung&family=Noto+Serif+KR:wght@200&display=swap");
 html,
 body,
@@ -6,47 +5,62 @@ p,
 figure {
   margin: 0;
 }
-* {
-  box-sizing: border-box;
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
 }
+
 img {
   vertical-align: middle;
 }
-header {
-  width: 90%;
-  margin: 50px auto;
-  justify-content: space-between;
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
   display: flex;
+  float: right;
+  padding: 40px;
+  width: 85%;
+  justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  font-family: "Gugi", cursive;
-  /* font-family: 'Nanum Gothic', sans-serif;
-    font-family: 'Song Myung', serif; */
-  padding: 0 0 0 100px;
+.navbar__logo {
   font-size: 3.2rem;
+  font-family: "Gugi", cursive;
 }
-.logo a {
-  color: #0e0e0e;
-  text-decoration: none;
-}
-.menu a {
-  color: #0e0e0e;
-  text-decoration: none;
-}
-.menu {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 15px;
+
+.navbar__menu {
   display: flex;
-  padding-right: 30px;
+  list-style: none;
+  padding-left: 0;
 }
-.menu p {
-  padding-left: 50px;
+
+.navbar__menu li {
+  padding: 8px 20px;
+}
+
+.navbar__menu li:hover {
+  background-color: #ebac23;
+  border-radius: 100px;
+}
+
+.navbar_tool {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: black;
+  display: none;
+}
+audio {
+  display: none;
 }
 
 footer {
-  width: 100%;
+  width: 80%;
   display: flex;
   padding: 2% 10%;
   margin-top: 80px;
@@ -66,131 +80,58 @@ footer img {
   margin: 0;
 }
 
-.menu a:hover {
-  color: black;
-  padding: 5px 8px 5px 8px;
-  border-radius: 50px;
-  background: #ebac23;
-}
-
-.navbar_tool {
-  position: absolute;
-  right: 32px;
-  font-size: 24px;
-  color: black;
-  display: none;
-}
-
-@media (max-width: 925px) and (min-width: 768px) {
-  .logo {
-    padding-left: 40px;
-  }
-  .menu P {
-    padding-left: 25px;
-  }
-  .main_text p {
-    padding: 3% 10%;
-    word-break: keep-all;
-  }
-  .main_text .ex1 {
-    font-size: 3.5rem;
-  }
-  .main_text .ex2 {
-    font-size: 1.7rem;
-    line-height: 1.4;
-  }
-  .main_text .ex3 {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  .main_text .ex4 {
-    font-size: 1rem;
-  }
-  .main_banner {
-    height: 40%;
-    width: 35%;
-    left: 15%;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 0px) {
-  header {
-    margin: 20px auto;
-  }
-  .logo {
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    text-align: center;
-    font-size: 2.3rem;
-    padding-left: 30px;
+    padding: 0;
   }
 
-  nav {
-  }
-  nav > a {
-    width: 20px;
-    height: 25px;
-    position: relative;
-    display: inline-block;
-    z-index: 99999;
-    transform: translateY(100%);
-  }
-  nav > a span {
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     position: absolute;
+  }
+
+  .navbar__menu li {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .navbar__menu li:hover {
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  .navbar__menu a {
     width: 100%;
-    height: 2px;
-    background-color: rgb(8, 8, 8);
   }
-  nav > a span:nth-child(1) {
-    top: 0;
+
+  .navbar_tool {
+    display: block;
+    z-index: 2;
+    padding: 30px 0;
   }
-  nav > a span:nth-child(2) {
-    top: calc(20% - 1px);
-  }
-  nav > a span:nth-child(3) {
-    top: calc(40% - 2px);
-  }
-  nav > div {
-    position: fixed;
-    left: 0;
-    top: 0;
+
+  .navbar__menu.active {
+    display: flex;
+    font-size: 3rem;
+    background-color: #e7e7e7;
     width: 100%;
     height: 100%;
-    background-color: #e7e7e7;
-    display: flex;
+    z-index: 1;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /*가로에서 세로 변경*/
-  }
-
-  .menu {
-    display: none;
-    z-index: 10;
-    padding-right: 0px;
-  }
-  .menu p {
-    padding-left: 0px;
-  }
-
-  nav div p {
-    padding: 20px 0; /*flex 영향으로 인해 패딩 마진 다 먹음*/
-  }
-  nav div p a {
-    color: #0e0e0e;
-    text-decoration: none;
-    font-size: 2rem;
     font-family: "Song Myung", serif;
   }
-  nav > a.active {
-    transform: translateY(0%);
-  }
-  nav > a:hover + div {
-    display: flex;
-  }
 
-  footer p {
-    line-height: 1.2;
-  }
-  .slick-track {
-    display: none;
+  .navbar__logo {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    font-size: 3rem;
   }
 }

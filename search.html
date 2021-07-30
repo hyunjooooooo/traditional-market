@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>전통시장</title>
     <link href="css/search.css" rel="stylesheet">
     <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/search.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zrv86pd9fw"></script>
+    <!-- <script src="js/search.js" type="text/javascript"></script> -->
     <script src="https://kit.fontawesome.com/5f8a6618c0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zrv86pd9fw"></script>
+    <link rel="shortcut icon" href="img/p1-2.png">
+    <link rel="icon" href="img/pp.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114*114" rel="pp.png">
+
+    <meta property="og:title" content="전통시장">
+    <meta property="og:url" content="https://hyunjooooooo.github.io/traditional-market/">
+    <meta property="og:image" content="img/1-0.png">
+    <meta property="og:description" content="산지의 신선함을 그대로 전달하기 위해 노력하는 소상공인,
+    깨끗하고 신선함으로 안전하게 지켜온 우리 가족의 건강,전통시장과 함께 합니다.">
+ 
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="전통시장">
+    <meta name="twitter:url" content="https://hyunjooooooo.github.io/traditional-market/">
+    <meta name="twitter:image" content="img/1-0.png">
+    <meta name="twitter:description" content="산지의 신선함을 그대로 전달하기 위해 노력하는 소상공인,
+    깨끗하고 신선함으로 안전하게 지켜온 우리 가족의 건강,전통시장과 함께 합니다.">
+    <audio src = "bgm.mp3" controls autoplay loop></audio>
 </head>
 <body>
     <nav class="navbar">
@@ -46,17 +63,72 @@
            <a href="#"><img src="img/one.png" alt="돋보기"></a>
            <P>* 원하시는 시장명 또는 풍목명을 입력하신 후 검색 버튼을 눌러주세요.</P> 
         </div>
+
         <div id="map" style="width:100%;height:400px;"></div>
-            
-        </div>
     </main>
 
     <script>
+        let city_1 = [
+        {v:"",t:""},
+        {v:"1",t:"서울"},
+        {v:"2",t:"경기도"},
+        {v:"3",t:"인천"}
+    ];
+
+        let city_child_1 = [
+        {v:"11",t:"구로구"},
+        {v:"12",t:"강남구"},
+        {v:"13",t:"마포구"}
+        ]
+        let city_child_2 = [
+        {v:"21",t:"수원시"},
+        {v:"22",t:"성남시"},
+        {v:"23",t:"포천시"}
+        ]
+        let city_child_3 = [
+        {v:"31",t:"남동구"},
+        {v:"32",t:"연수구"},
+        {v:"33",t:"동구"}
+        ]
+        function loadCity(){
+            let h = [];
+            city_1.forEach(item => {
+                h.push('<option value="' + item.v + '">' + item.t + '</option>');
+            })
+            document.getElementById("city_1").innerHTML = h.join("");
+        }
+
+        function loadCityChild(){
+            let city_1 = document.getElementById("city_1").value;
+            let h = [];
+            if(city_1 == ""){
+
+            }else{
+                if(city_1 == "1"){
+                city_child_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_1 == "2"){
+                city_child_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_1 == "3"){
+                city_child_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+                }
+            }
+            document.getElementById("city_2").innerHTML = h.join("")
+        }
+
+        loadCity();
+
+
         var mapOptions = {
             center: new naver.maps.LatLng(37.3595704, 127.105399),
             zoom: 10
         };
-        
+
         var map = new naver.maps.Map('map', mapOptions);
     </script>
 

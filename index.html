@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전통시장</title>
 
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/slick.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="./js/index.js" type="text/javascript"></script>
-    <script src="./js/common.js" type="text/javascript"></script>
-    <script src="./js/slick.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/5f8a6618c0.js" crossorigin="anonymous"></script>
     
     <link rel="shortcut icon" href="img/p1-2.png">
@@ -31,29 +31,31 @@
     <meta name="twitter:image" content="img/1-0.png">
     <meta name="twitter:description" content="산지의 신선함을 그대로 전달하기 위해 노력하는 소상공인,
     깨끗하고 신선함으로 안전하게 지켜온 우리 가족의 건강,전통시장과 함께 합니다.">
-    <audio src = "bgm.mp3" controls autoplay loop></audio>
-   
-
+    <!-- <audio src = "bgm.mp3" controls autoplay loop></audio> -->
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">전통시장</a>   
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.html">전통시장</a>
         </div>
-        <div class="menu">
-            <p><a href="notice.html">공지사항</a></p>
-            <p><a href="introduce.html">전통시장소개</a></p>
-            <p><a href="search.html">전통시장찾기</a></p>
-            <p><a href="story.html">시장이야기</a></p> 
-        </div>     
+
+        <ul class="navbar__menu">
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="introduce.html">전통시장소개</a></li>
+            <li><a href="search.html">전통시장찾기</a></li>
+            <li><a href="story.html">시장이야기</a></li> 
+        </ul>
+
         <a href="#" class="navbar_tool">
             <i class="fas fa-bars"></i>
         </a> 
-    </header>
-    <main>
-        <div class="main">
-            <div><img src="img/main.png" alt="메인"></div>
+    </nav>
 
+    <main>
+        <article class="main">
+            <div class="main_img">
+                <img src="img/main.png" alt="메인">
+            </div>
             <div class="main_text">
                 <p class="ex1">傳統<br>市場</p>
                 <p class="ex2">산지의 신선함을 그대로 전달하기 위해 노력하는 소상공인</p>
@@ -62,18 +64,20 @@
                 </p>
                 <p class="ex4"><a href="introduce.html">VIEW MORE +</a></p>
             </div>
-        </div>
+        </article>
+        
         <div class="main_banner">
             <a href="http://www.onnurimarket.kr/index.jsp#!/"><img src="img/market.png" alt="배너"></a>
             <a href="https://onnuri-mall.co.kr/main/welcome.ecbs/"><img src="img/market2.png" alt="배너"></a> 
         </div>  
-            
-        </main>
+    </main>
+
     <footer>
         <a href="https://www.semas.or.kr/"><img src="img/footer_logo.png" alt="푸터"></a>
         <p>이용안내   |   개인정보처리방침   |   저작권정책   |   도로명주소안내<br>
             (우편번호 : 34917) 대전광역시 중구 보문로 246 대림빌딩 2~3층, 11층 소상공인시장진흥공단.
             </p>
     </footer>
+
 </body>
 </html>

@@ -1,5 +1,27 @@
 @charset "utf-8";
 @import url("common.css");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&family=Song+Myung&family=Noto+Serif+KR:wght@200&display=swap");
+html,
+body,
+p,
+figure {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
 
 main {
   width: 100%;
@@ -9,17 +31,21 @@ main::after {
   clear: both;
   display: block;
 }
-main .main {
-  width: 90%;
-  /* float: right; */
-}
+
 .main > div:nth-child(1) {
   width: 65%;
 }
-.main img {
+
+.main {
+  width: 90%;
+  display: flex;
+  float: right;
+}
+.main_img img {
   width: 100%;
   height: 70vh;
 }
+
 .main_text {
   width: 35%;
   color: white;
@@ -28,6 +54,7 @@ main .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 70vh;
 }
 .main_text p {
   padding: 1% 20%;
@@ -52,93 +79,31 @@ main .main {
 .main_text .ex4 {
   font-size: 15px;
 }
-
 .main_banner {
   position: absolute;
-  left: 12%;
+  width: 30%;
+  left: 13%;
   top: 25%;
-  height: 30%;
-  width: 25%;
-}
-.main_banner img {
-  width: 100%;
-}
-audio {
-  display: none;
 }
 
-@media (max-width: 1480px) and (min-width: 926px) {
+@media screen and (max-width: 768px) {
   .main_banner {
-    height: 40%;
-    width: 30%;
-    left: 15%;
+    left: 25%;
+    top: 25%;
+    width: 50%;
   }
-}
-@media (max-width: 925px) and (min-width: 768px) {
-  .main_text p {
-    padding: 3% 10%;
-    word-break: keep-all;
-  }
-  .main_text .ex1 {
-    font-size: 3.5rem;
-  }
-  .main_text .ex2 {
-    font-size: 1.7rem;
-    line-height: 1.4;
-  }
-  .main_text .ex3 {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  .main_text .ex4 {
-    font-size: 1rem;
-  }
-  .main_banner {
-    height: 40%;
-    width: 35%;
-    left: 15%;
-  }
-}
-
-@media (min-width: 768px) {
-  main .main {
-    display: flex;
-    float: right;
-  }
-}
-@media (max-width: 767px) {
   .main > div:nth-child(1) {
     width: 100%;
   }
-  .main_banner {
-    position: absolute;
-    left: 20%;
-    top: 15%;
-    height: 60%;
-    width: 60%;
+  .main {
+    flex-direction: column;
+    float: none;
+    margin: auto;
   }
-
-  main {
-    height: 80vh;
-  }
-  main .main {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .main img {
-    width: 100%;
-    height: 45vh;
-  }
-  .main_text p {
-    padding: 1% 18%;
-    word-break: keep-all;
-    text-align: center;
-  }
-
   .main_text {
     width: 100%;
-    background-color: #cb8e25;
+    height: auto;
+    text-align: center;
   }
 
   .main_text .ex1 {
@@ -157,12 +122,11 @@ audio {
     font-size: 0.5rem;
     padding-bottom: 20px;
   }
-  .main_banner img:hover {
-    transform: none;
+
+  footer {
+    width: 80%;
   }
-  main br {
-    display: none;
-  }
+
   @media (max-width: 321px) {
     main {
       height: 80vh;

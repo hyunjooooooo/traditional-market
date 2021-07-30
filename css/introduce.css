@@ -4,26 +4,24 @@
 main {
   width: 100%;
 }
-
-article {
-  /* border: 1px solid black; */
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-}
 .main2 {
   display: none;
 }
 .txt {
+  text-align: center;
+  padding: 0px 200px;
   font-size: 30px;
   font-family: "Song Myung", serif;
-  text-align: center;
+}
+
+article {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
 }
 
 .img_intro {
   width: 18%;
-
-  /* border: 1px solid rgb(157, 255, 0); */
 }
 .img_intro img {
   margin: 38px 0;

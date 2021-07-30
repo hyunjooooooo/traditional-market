@@ -230,16 +230,36 @@
             }else if(city_2 == "33"){
                 city_market_3_3.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }
+        }
+            document.getElementById("city_3").innerHTML = h.join("");
+
+            function loadCityMap(){
+            let city_2 = document.getElementById("city_2").value;
+            let h = [];
+            if(city_2 == ""){
+
+            }else if(city_3 == "111"){
+                city_market_1_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
                     var mapOptions = {
                     center: new naver.maps.LatLng(37.4916251,126.8515728),
                     zoom: 17
                     };
                     var map = new naver.maps.Map('map', mapOptions);
                 });
+            }else if(city_3 == "112"){
+                city_market_1_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.5106008,126.6748769),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
             }
-        }
-            document.getElementById("city_3").innerHTML = h.join("");
-        
+        }   
     }
         loadCity();
         loadCityChild();

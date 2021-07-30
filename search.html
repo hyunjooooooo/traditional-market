@@ -52,16 +52,15 @@
        </div>
        <div class="input">
            <label>시.도 </label>
-           <select class="input_1" id="city_1" onchange="loadCityChild();">
-            </select>
+           <select class="input_1" id="city_1" onchange="loadCityChild();"></select>
 
             <label>군/구</label>
-            <select class="input_1" id="city_2">
+            <select class="input_1" id="city_2" onchange="loadCityMarket();"></select>
 
-             <label>시장명</label>
-           <input type="search" class="input_2" placeholder="  검색어를 입력하세요.">
+            <label>시장명</label>
+            <select class="input_1" id="city_3"></select>
            <a href="#"><img src="img/one.png" alt="돋보기"></a>
-           <P>* 원하시는 시장명 또는 풍목명을 입력하신 후 검색 버튼을 눌러주세요.</P> 
+           <P>* 원하시는 시장명을 선택 후 검색 버튼을 눌러주세요.</P> 
         </div>
 
         <div id="map"></div>
@@ -81,8 +80,8 @@
         {v:"13",t:"마포구"}
         ]
         let city_child_2 = [
-        {v:"21",t:"수원시"},
-        {v:"22",t:"성남시"},
+        {v:"21",t:"김포시"},
+        {v:"22",t:"부천시"},
         {v:"23",t:"포천시"}
         ]
         let city_child_3 = [
@@ -90,6 +89,58 @@
         {v:"32",t:"연수구"},
         {v:"33",t:"동구"}
         ]
+
+        let city_market_1_1 = [
+            {v:"111",t:"구로시장"},
+            {v:"112",t:"개봉시장"},
+            {v:"113",t:"오류시장"}
+        ]
+        let city_market_1_2 = [
+            {v:"121",t:"논현시장"},
+            {v:"122",t:"역삼시장"},
+            {v:"123",t:"강남시장"}
+        ]
+        let city_market_1_3 = [
+            {v:"131",t:"연남시장"},
+            {v:"132",t:"홍대시장"},
+            {v:"133",t:"망원시장"}
+        ]
+
+        let city_market_2_1 = [
+            {v:"211",t:"북변시장"},
+            {v:"212",t:"사우시장"},
+            {v:"213",t:"김포초시장"}
+        ]
+        let city_market_2_2 = [
+            {v:"221",t:"부천시장"},
+            {v:"222",t:"소사시장"},
+            {v:"223",t:"역곡시장"}
+        ]
+        let city_market_2_3 = [
+            {v:"231",t:"이동시장"},
+            {v:"232",t:"소흘시장"},
+            {v:"233",t:"일동시장"}
+        ]
+
+        let city_market_3_1 = [
+            {v:"",t:""},
+            {v:"211",t:"모래내시장"},
+            {v:"212",t:"구월시장"},
+            {v:"213",t:"만수시장"}
+        ]
+        let city_market_3_2 = [
+            {v:"",t:""},
+            {v:"221",t:"연수시장"},
+            {v:"222",t:"남인천시장"},
+            {v:"223",t:"도화시장"}
+        ]
+        let city_market_3_3 = [
+            {v:"",t:""},
+            {v:"231",t:"동인천시장"},
+            {v:"232",t:"인천시장"},
+            {v:"233",t:"동구박시장"}
+        ]
+
         function loadCity(){
             let h = [];
             city_1.forEach(item => {
@@ -118,10 +169,59 @@
                 });
                 }
             }
-            document.getElementById("city_2").innerHTML = h.join("")
+            document.getElementById("city_2").innerHTML = h.join("");
+        }
+
+        function loadCityMarket(){
+            let city_2 = document.getElementById("city_2").value;
+            let h = [];
+            if(city_2 == ""){
+
+            }else{
+                if(city_2 == "11"){
+                city_market_1_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "12"){
+                city_market_1_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "13"){
+                city_market_1_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "21"){
+                city_market_2_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "22"){
+                city_market_2_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "23"){
+                city_market_2_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "31"){
+                city_market_3_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "32"){
+                city_market_3_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }else if(city_2 == "33"){
+                city_market_3_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                });
+            }
+        }
+            document.getElementById("city_3").innerHTML = h.join("");
         }
 
         loadCity();
+        loadCityChild();
+        loadCityMarket();
 
 
         var mapOptions = {

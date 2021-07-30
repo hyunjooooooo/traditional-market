@@ -58,7 +58,7 @@
             <select class="input_1" id="city_2" onchange="loadCityMarket();"></select>
 
             <label>시장명</label>
-            <select class="input_1" id="city_3"></select>
+            <select class="input_1" id="city_3" onchange="loadCityMap();"></select>
            <a href="#"><img src="img/one.png" alt="돋보기"></a>
            <P>* 원하시는 시장명을 선택 후 검색 버튼을 눌러주세요.</P> 
         </div>
@@ -67,6 +67,14 @@
     </main>
 
     <script>
+
+        var mapOptions = {
+                    center: new naver.maps.LatLng(37.4894514,126.8831079),
+                    zoom: 15
+                };
+
+                var map = new naver.maps.Map('map', mapOptions);
+
         let city_1 = [
         {v:"",t:""},
         {v:"1",t:"서울"},
@@ -190,18 +198,10 @@
                 if(city_2 == "11"){
                 city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
-                    var mapOptions = {
-                    center: new naver.maps.LatLng(37.4894514,126.8831079),
-                    zoom: 15
-                };
             });
-        }else if(city_2 == "12"){
-            city_market_1_2.forEach(item => {
-                h.push('<option value="' + item.v + '">' + item.t + '</option>');
-                var mapOptions = {
-                    center: new naver.maps.LatLng(37.4916251,126.8515728),
-                    zoom: 15
-                };
+            }else if(city_2 == "12"){
+                city_market_1_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
             });
             }else if(city_2 == "13"){
                 city_market_1_3.forEach(item => {
@@ -230,23 +230,30 @@
             }else if(city_2 == "33"){
                 city_market_3_3.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.4916251,126.8515728),
+                    zoom: 17
+                    };
                 });
             }
         }
             document.getElementById("city_3").innerHTML = h.join("");
         }
 
+        function loadCityMap(){
+            let city_3 = document.getElementById("city_3").value;
+            let h = [];
+            if(city_3 == ""){
+
+            }else{
+
+            }
+        }
+
         loadCity();
         loadCityChild();
         loadCityMarket();
-
-
-        var mapOptions = {
-            center: new naver.maps.LatLng(37.4894514,126.8831079),
-            zoom: 15
-        };
-
-        var map = new naver.maps.Map('map', mapOptions);
+        
     </script>
 
     <footer>

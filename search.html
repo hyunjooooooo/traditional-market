@@ -58,7 +58,7 @@
             <select class="input_1" id="city_2" onchange="loadCityMarket();"></select>
 
             <label>시장명</label>
-            <select class="input_1" id="city_3" onchange="loadCityMap();"></select>
+            <select class="input_2" id="city_3" onchange="loadCityMap();"></select>
            <a href="#"><img src="img/one.png" alt="돋보기"></a>
            <P>* 원하시는 시장명을 선택 후 검색 버튼을 눌러주세요.</P> 
         </div>
@@ -268,7 +268,7 @@
 
                     var position = new naver.maps.LatLng(37.5022222,126.8478113);
                     var map = new naver.maps.Map('map', {
-                        center: position, zoom: 25
+                        center: position, zoom: 18
                     });
                     var markerOptions = {
                         position: position,
@@ -286,11 +286,14 @@
             }else if(city_3 == "121"){
                 city_market_1_2.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
-                    var mapOptions = {
+                    var map = new naver.maps.Map('map', {
                     center: new naver.maps.LatLng(37.5128878,126.9576627),
                     zoom: 17
-                    };
-                    var map = new naver.maps.Map('map', mapOptions);
+                    });
+                    var marker = new naver.maps.Marker({
+                        position: new naver.maps.LatLng(37.5128878,126.9576627),
+                        map: map
+                    });
                 });
             }else if(city_3 == "122"){
                 city_market_1_2.forEach(item => {

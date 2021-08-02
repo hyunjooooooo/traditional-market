@@ -104,20 +104,20 @@
         let city_market_1_1 = [
             {v:"",t:""},
             {v:"111",t:"구로시장"},
-            {v:"112",t:"개봉시장"},
-            {v:"113",t:"오류시장"}
+            {v:"112",t:"개봉중앙시장"},
+            {v:"113",t:"고척근린시장"}
         ]
         let city_market_1_2 = [
             {v:"",t:""},
             {v:"121",t:"논현시장"},
-            {v:"122",t:"역삼시장"},
-            {v:"123",t:"강남시장"}
+            {v:"122",t:"영동시장"},
+            {v:"123",t:"도곡시장"}
         ]
         let city_market_1_3 = [
             {v:"",t:""},
-            {v:"131",t:"연남시장"},
-            {v:"132",t:"홍대시장"},
-            {v:"133",t:"망원시장"}
+            {v:"131",t:"마포시장"},
+            {v:"132",t:"망원동월드컵시장"},
+            {v:"133",t:"합정시장"}
         ]
 
         let city_market_2_1 = [
@@ -244,20 +244,92 @@
                 city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
                     var mapOptions = {
-                    center: new naver.maps.LatLng(37.4916251,126.8515728),
+                    center: new naver.maps.LatLng(37.4894514,126.8811739),
                     zoom: 17
                     };
                     var map = new naver.maps.Map('map', mapOptions);
                 });
             }else if(city_3 == "112"){
-                city_market_1_2.forEach(item => {
+                city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
                     var mapOptions = {
-                    center: new naver.maps.LatLng(37.5106008,126.6748769),
+                    center: new naver.maps.LatLng(37.4916251,126.8515728),
                     zoom: 17
                     };
                     var map = new naver.maps.Map('map', mapOptions);
                 });
+            }else if(city_3 == "113"){
+                city_market_1_1.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.5022222,126.8478113),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+            }else if(city_3 == "121"){
+                city_market_1_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.5128878,126.9576627),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+            }else if(city_3 == "122"){
+                city_market_1_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.545144,126.8833959),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+            }else if(city_3 == "123"){
+                city_market_1_2.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.545144,126.8833959),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+            }else if(city_3 == "131"){
+                city_market_1_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.5451854,126.883396),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+            }else if(city_3 == "132"){
+                city_market_1_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.5566621,126.9036501),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+            }else if(city_3 == "133"){
+                city_market_1_3.forEach(item => {
+                    h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var mapOptions = {
+                    center: new naver.maps.LatLng(37.5485282,126.9120017),
+                    zoom: 17
+                    };
+                    var map = new naver.maps.Map('map', mapOptions);
+                });
+
+
+
+
+
+
+
+
+
             }
         }   
     

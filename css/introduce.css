@@ -82,6 +82,7 @@ article {
   .txt {
     margin-top: 50px;
     font-size: 25px;
+    padding: 0;
   }
   article {
     display: none;

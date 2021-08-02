@@ -87,9 +87,12 @@ main::after {
 }
 
 @media screen and (max-width: 768px) {
+  .main_img img {
+    height: 100%;
+  }
   .main_banner {
     left: 25%;
-    top: 25%;
+    top: 15%;
     width: 50%;
   }
   .main > div:nth-child(1) {

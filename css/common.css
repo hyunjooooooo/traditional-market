@@ -118,7 +118,8 @@ footer img {
 
   .navbar__menu.active {
     display: flex;
-    font-size: 3rem;
+    top: 0;
+    font-size: 2rem;
     background-color: #e7e7e7;
     width: 100%;
     height: 100%;

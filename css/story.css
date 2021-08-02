@@ -12,17 +12,17 @@
 
 .input .input_1 {
   width: 10%;
-  height: 30px;
+  height: 40px;
   margin: 0 2px;
 }
 
 .input .input_2 {
-  width: 25%;
-  height: 30px;
+  width: 20%;
+  height: 40px;
 }
 .input img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   vertical-align: bottom;
 }
 .ex {

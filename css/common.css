@@ -80,6 +80,11 @@ footer img {
   margin: 0;
 }
 
+@media (max-width: 800px) and (min-width: 769px) {
+  .navbar_menu li {
+    padding: 8px 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;

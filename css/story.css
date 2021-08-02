@@ -185,8 +185,9 @@
   }
   .popup div {
     font-size: 15px;
+    padding: 0 20px;
   }
-  .pop p {
-    margin: 0 auto;
+  .popup p {
+    font-size: 13px;
   }
 }

@@ -256,6 +256,9 @@
                     center: new naver.maps.LatLng(37.4916251,126.8515728),
                     zoom: 17
                     };
+                    var marker = new naver.maps.marker({
+                        position: new naver.maps.LatLng(37.4916251,126.8515728),map:map
+                    })
                     var map = new naver.maps.Map('map', mapOptions);
                 });
             }else if(city_3 == "113"){
@@ -321,15 +324,6 @@
                     };
                     var map = new naver.maps.Map('map', mapOptions);
                 });
-
-
-
-
-
-
-
-
-
             }
         }   
     
@@ -338,6 +332,8 @@
         loadCityMarket();
         loadCityMap();
         
+
+
     </script>
 
     <footer>

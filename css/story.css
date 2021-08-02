@@ -183,4 +183,10 @@
   input {
     font-size: 0.5rem;
   }
+  .popup div {
+    font-size: 15px;
+  }
+  .pop p {
+    margin: 0 auto;
+  }
 }

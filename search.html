@@ -68,12 +68,12 @@
 
     <script>
 
-        var mapOptions = {
-                    center: new naver.maps.LatLng(37.4894514,126.8831079),
-                    zoom: 15
-                };
+        // var mapOptions = {
+        //             center: new naver.maps.LatLng(37.4894514,126.8831079),
+        //             zoom: 15
+        //         };
 
-                var map = new naver.maps.Map('map', mapOptions);
+        //         var map = new naver.maps.Map('map', mapOptions);
 
         let city_1 = [
         {v:"",t:""},
@@ -265,10 +265,12 @@
             }else if(city_3 == "113"){
                 city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
+
                     var position = new naver.maps.LatLng(37.5022222,126.8478113);
                     var map = new naver.maps.Map('map', {
-                        enter: position, zoom: 15});
-                    var mapOptions = {
+                        enter: position, zoom: 15
+                    });
+                    var markerOptions = {
                         position: position,
                         map:map,
                         icon: {

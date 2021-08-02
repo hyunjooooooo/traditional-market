@@ -252,14 +252,15 @@
             }else if(city_3 == "112"){
                 city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
-                    var mapOptions = {
-                    center: new naver.maps.LatLng(37.4916251,126.8515728),
-                    zoom: 17
-                    };
+
+                    var map = new naver.maps.Map('map', {
+                        center: new naver.maps.LatLng(37.4916251,126.8515728),
+                        zoom: 17
+                    });
                     var marker = new naver.maps.marker({
-                        position: new naver.maps.LatLng(37.4916251,126.8515728),map:map
+                        position: new naver.maps.LatLng(37.4916251,126.8515728),
+                        map: map
                     })
-                    var map = new naver.maps.Map('map', mapOptions);
                 });
             }else if(city_3 == "113"){
                 city_market_1_1.forEach(item => {

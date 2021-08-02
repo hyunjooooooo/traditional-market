@@ -265,12 +265,22 @@
             }else if(city_3 == "113"){
                 city_market_1_1.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');
+                    var position = new naver.maps.LatLng(37.5022222,126.8478113);
+                    var map = new naver.maps.Map('map', {
+                        enter: position, zoom: 15});
                     var mapOptions = {
-                    center: new naver.maps.LatLng(37.5022222,126.8478113),
-                    zoom: 17
-                    };
-                    var map = new naver.maps.Map('map', mapOptions);
+                        position: position,
+                        map:map,
+                        icon: {
+                            url: './img/pp.png',
+                            size: new naver.maps.Size(22, 35),
+                            origin: new naver.maps.Point(0, 0),
+                            anchor: new naver.maps.Point(11, 35)
+                            }
+                        };
+                    var marker = new naver.maps.Marker(markerOptions);
                 });
+
             }else if(city_3 == "121"){
                 city_market_1_2.forEach(item => {
                     h.push('<option value="' + item.v + '">' + item.t + '</option>');

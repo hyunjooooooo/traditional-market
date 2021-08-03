@@ -84,4 +84,7 @@ main {
   label {
     font-size: 0.7rem;
   }
+  #map {
+    height: 400px;
+  }
 }
